@@ -1,0 +1,16 @@
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:d3="d3faces"
+    xmlns:f="jakarta.faces.core"
+    xmlns:h="jakarta.faces.html"
+    xmlns:p="primefaces"
+    xmlns:passthrough="jakarta.faces.passthrough"
+    xmlns:ui="jakarta.faces.facelets">
+
+    <ul>
+        <ui:repeat value="#{galleryView.galleries}" var="f">
+            <li><p:link outcome="/d3faces/#{f.fileName}" value="#{f.name}" /></li>
+        </ui:repeat>
+    </ul>
+
+</ui:composition>

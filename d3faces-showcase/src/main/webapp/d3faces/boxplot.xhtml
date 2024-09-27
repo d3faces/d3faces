@@ -1,0 +1,19 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:d3="d3faces"
+                xmlns:f="jakarta.faces.core"
+                xmlns:h="jakarta.faces.html"
+                xmlns:p="primefaces"
+                xmlns:ui="jakarta.faces.facelets"
+                template="/WEB-INF/template.xhtml">
+    <ui:define name="title">Boxplot</ui:define>
+    <ui:define name="content">
+        <div class="ui-g ui-fluid">
+            <div class="ui-g-12">
+                <div class="card clearfix">
+                    <h2>Boxplot</h2>
+                    <d3:boxplot/>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>

@@ -1,0 +1,42 @@
+.axis {
+    font: 10px sans-serif;
+}
+
+.axis-title {
+    text-anchor: end;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis--x path {
+    display: none;
+}
+
+.axis--y .tick:not(.tick--one) line {
+    stroke-opacity: .15;
+}
+
+.line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.area {
+    fill-opacity: 0.6;
+}
+
+.area--below {
+    fill: #de77ae;
+}
+
+.area--above {
+    fill: #7fbc41;
+}

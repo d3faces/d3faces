@@ -1,0 +1,529 @@
+<?xml version="1.0"?>
+<facelet-taglib version="2.2"
+                xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facelettaglibrary_2_2.xsd">
+    
+    <namespace>d3faces</namespace>
+
+    <tag>
+        <tag-name>brushandscrollingzoom</tag-name>
+        <description><![CDATA[Brush and scrolling zoom]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Brushandscrollingzoom</component-type>
+            <renderer-type>com.aripd.d3faces.BrushandscrollingzoomRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>		
+    </tag>
+    <tag>
+        <tag-name>brushandzoom</tag-name>
+        <description><![CDATA[Brush and zoom]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Brushandzoom</component-type>
+            <renderer-type>com.aripd.d3faces.BrushandzoomRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>		
+    </tag>
+    <tag>
+        <tag-name>collapsibletree</tag-name>
+        <description><![CDATA[Collapsible Tree Component. The tree layout implements the Reingold-Tilford algorithm for efficient, tidy arrangement of layered nodes.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.CollapsibleTree</component-type>
+            <renderer-type>com.aripd.d3faces.CollapsibleTreeRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>dendrogram</tag-name>
+        <description><![CDATA[Dendrogram Component. A node-link diagram that places leaf nodes of the tree at the same depth.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Dendrogram</component-type>
+            <renderer-type>com.aripd.d3faces.DendrogramRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>barchart</tag-name>
+        <description><![CDATA[Bar Chart Component.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Barchart</component-type>
+            <renderer-type>com.aripd.d3faces.BarchartRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>barchartdiverging</tag-name>
+        <description><![CDATA[Bar Chart Component.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Barchartdiverging</component-type>
+            <renderer-type>com.aripd.d3faces.BarchartdivergingRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>barcharthorizontal</tag-name>
+        <description><![CDATA[Bar Chart Component.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Barcharthorizontal</component-type>
+            <renderer-type>com.aripd.d3faces.BarcharthorizontalRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>boxplot</tag-name>
+        <description><![CDATA[Boxplot Component.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Boxplot</component-type>
+            <renderer-type>com.aripd.d3faces.BoxplotRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>linechart</tag-name>
+        <description><![CDATA[Line Chart Component.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Linechart</component-type>
+            <renderer-type>com.aripd.d3faces.LinechartRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>partition</tag-name>
+        <description><![CDATA[Partition Component. Zoomable Partition Layout.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Partition</component-type>
+            <renderer-type>com.aripd.d3faces.PartitionRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>percentagechange</tag-name>
+        <description><![CDATA[Percentage Change Component.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Percentagechange</component-type>
+            <renderer-type>com.aripd.d3faces.PercentagechangeRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>scatterplot</tag-name>
+        <description><![CDATA[Scatterplot Component.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Scatterplot</component-type>
+            <renderer-type>com.aripd.d3faces.ScatterplotRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>scatterplotmatrix</tag-name>
+        <description><![CDATA[Scatterplotmatrix Component.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Scatterplotmatrix</component-type>
+            <renderer-type>com.aripd.d3faces.ScatterplotmatrixRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>tickbarcode</tag-name>
+        <description><![CDATA[Tickbarcode Component.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Tickbarcode</component-type>
+            <renderer-type>com.aripd.d3faces.TickbarcodeRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>tickboxplot</tag-name>
+        <description><![CDATA[Tickboxplot Component.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Tickboxplot</component-type>
+            <renderer-type>com.aripd.d3faces.TickboxplotRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>tickdistribution</tag-name>
+        <description><![CDATA[Tickdistribution Component.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Tickdistribution</component-type>
+            <renderer-type>com.aripd.d3faces.TickdistributionRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>ticklinechart</tag-name>
+        <description><![CDATA[Ticklinechart Component.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Ticklinechart</component-type>
+            <renderer-type>com.aripd.d3faces.TicklinechartRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>treediagram</tag-name>
+        <description><![CDATA[Treediagram Component.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Treediagram</component-type>
+            <renderer-type>com.aripd.d3faces.TreediagramRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>treemap</tag-name>
+        <description><![CDATA[Treemap Component. A treemap recursively subdivides area into rectangles; the area of any node in the tree corresponds to its value.]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Treemap</component-type>
+            <renderer-type>com.aripd.d3faces.TreemapRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>
+    </tag>
+    <tag>
+        <tag-name>zoomablearea</tag-name>
+        <description><![CDATA[Zoomable area]]></description>
+        <component>
+            <component-type>com.aripd.d3faces.Zoomablearea</component-type>
+            <renderer-type>com.aripd.d3faces.ZoomableareaRenderer</renderer-type>
+        </component>
+        <attribute>
+            <name>url</name>
+            <required>false</required>
+            <type>java.lang.String</type>
+            <description>URL of json data. If empty, default data will be used.</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <type>java.lang.Integer</type>
+            <description>Diagram height</description>
+        </attribute>		
+    </tag>
+</facelet-taglib>

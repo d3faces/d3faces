@@ -1,0 +1,43 @@
+<!DOCTYPE html [<!ENTITY nbsp "&#160;"> <!ENTITY bull "&#8226;"> <!ENTITY copy "&#169;"> <!ENTITY trade "&#8482;"> <!ENTITY reg "&#174;">]>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="jakarta.faces.core"
+      xmlns:h="jakarta.faces.html"
+      xmlns:p="primefaces"
+      xmlns:ui="jakarta.faces.facelets">
+
+    <f:view encoding="UTF-8">
+
+        <h:head>
+            <f:facet name="first">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+                <meta name="apple-mobile-web-app-capable" content="yes" />
+            </f:facet>
+            <title><ui:insert name="title"></ui:insert></title>
+            <f:facet name="middle"></f:facet>
+            <f:facet name="last"></f:facet>
+            <ui:insert name="head"/>
+        </h:head>
+
+        <h:body>
+
+            <div class="ui-g ui-fluid">
+                <div class="ui-g-12">
+                    <ui:include src="topbar.xhtml" />
+                </div>
+                <div class="ui-g-3">
+                    <ui:include src="sidebar.xhtml" />
+                    <ui:include src="footer.xhtml" />
+                </div>
+                <div class="ui-g-9">
+                    <ui:insert name="content"/>
+                </div>
+            </div>
+
+        </h:body>
+
+    </f:view>
+
+</html>

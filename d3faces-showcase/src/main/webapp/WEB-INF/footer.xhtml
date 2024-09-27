@@ -1,0 +1,18 @@
+<!DOCTYPE html [<!ENTITY nbsp "&#160;"> <!ENTITY bull "&#8226;"> <!ENTITY copy "&#169;"> <!ENTITY trade "&#8482;"> <!ENTITY reg "&#174;">]>
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="jakarta.faces.core"
+    xmlns:h="jakarta.faces.html"
+    xmlns:p="primefaces"
+    xmlns:ui="jakarta.faces.facelets">
+
+    <div class="footer">
+        <h:panelGroup>
+            Copyright &copy;
+            <h:outputText value="#{session.lastAccessedTime}">
+                <f:convertDateTime pattern="yyyy" type="date"/>
+            </h:outputText>
+            aripd.com
+        </h:panelGroup>
+    </div>
+</ui:composition>
