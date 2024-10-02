@@ -27,5 +27,4 @@
   - [TickLineChart](/components/ticklinechart.md)
   - [TreeDiagram](/components/treediagram.md)
   - [TreeMap](/components/treemap.md)
-  - [WordCloud](/components/wordcloud.md)
   - [ZoomableArea](/components/zoomablearea.md)
