@@ -18,7 +18,7 @@
     
     <properties>
         <mojarra.version>4.0.7</mojarra.version>
-        <jetty.version>12.0.13</jetty.version>
+        <jetty.version>12.0.14</jetty.version>
         <jsf.project.stage>Production</jsf.project.stage>
     </properties>
     
