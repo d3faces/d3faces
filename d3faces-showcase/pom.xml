@@ -51,7 +51,7 @@
         <dependency>
             <groupId>org.glassfish.jersey.ext.cdi</groupId>
             <artifactId>jersey-cdi1x-servlet</artifactId>
-            <version>3.1.8</version>
+            <version>3.1.9</version>
         </dependency>
         <dependency>
             <groupId>org.jboss.weld.servlet</groupId>
